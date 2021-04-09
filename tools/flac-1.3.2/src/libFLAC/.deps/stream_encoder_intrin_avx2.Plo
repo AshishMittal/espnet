@@ -1,0 +1,268 @@
+stream_encoder_intrin_avx2.lo: stream_encoder_intrin_avx2.c \
+ /usr/include/stdc-predef.h ../../config.h include/private/cpu.h \
+ ../../include/FLAC/ordinals.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
+ /usr/include/bits/stdint-uintn.h include/private/stream_encoder.h \
+ ../../include/FLAC/format.h ../../include/FLAC/export.h \
+ ../../include/FLAC/ordinals.h include/private/bitmath.h \
+ ../../include/FLAC/assert.h ../../include/share/compat.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd.h \
+ /usr/include/inttypes.h /usr/include/sys/types.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/select2.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h /usr/include/utime.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/bits/stdlib.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/immintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/mmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/xmmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/mm_malloc.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/emmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/pmmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/tmmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/smmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/popcntintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/wmmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avxintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx2intrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512fintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512erintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512pfintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512cdintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vlintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512bwintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512dqintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vlbwintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vldqintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512ifmaintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512ifmavlintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vbmiintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vbmivlintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/shaintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/lzcntintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/bmiintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/bmi2intrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/fmaintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/f16cintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/rtmintrin.h \
+ /gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/xtestintrin.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:
+
+include/private/cpu.h:
+
+../../include/FLAC/ordinals.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+include/private/stream_encoder.h:
+
+../../include/FLAC/format.h:
+
+../../include/FLAC/export.h:
+
+../../include/FLAC/ordinals.h:
+
+include/private/bitmath.h:
+
+../../include/FLAC/assert.h:
+
+../../include/share/compat.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/bits/unistd.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/select2.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/utime.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/stdlib.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/immintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/mmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/xmmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/mm_malloc.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/emmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/pmmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/tmmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/smmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/popcntintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/wmmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avxintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx2intrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512fintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512erintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512pfintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512cdintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vlintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512bwintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512dqintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vlbwintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vldqintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512ifmaintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512ifmavlintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vbmiintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/avx512vbmivlintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/shaintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/lzcntintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/bmiintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/bmi2intrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/fmaintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/f16cintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/rtmintrin.h:
+
+/gpfs/dcc09/99/optshare/share/gcc-5.4.0/x86_64/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/xtestintrin.h:
