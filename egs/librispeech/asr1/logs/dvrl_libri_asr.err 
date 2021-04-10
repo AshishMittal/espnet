@@ -1,4 +1,0 @@
-activate does not accept more than one argument:
-['--stage', '4', '--stop-stage', '4']
-
-run.pl: job failed, log is in exp/train-clean-100_pytorch_train_specaug/train.log

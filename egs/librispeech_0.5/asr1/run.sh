@@ -182,8 +182,8 @@ if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
             spm_encode --model=${bpemodel}.model --output_format=piece > ${lmdatadir}/train.txt
         
         #prepare validation data.
-        cut -f 2- -d" " data/${train_dev}/text | spm_encode --model=${bpemodel}.model --output_format=piece > ${lmdatadir}/valid.txt
-                                                            
+        cut -f 2- -d" " data/${train_dev}/text | spm_encode --model=${bpemodel}.model --output_format=piece \
+                                                            > ${lmdatadir}/valid.txt
     fi
     ${cuda_cmd} --gpu ${ngpu} ${lmexpdir}/train.log \
         lm_train.py \

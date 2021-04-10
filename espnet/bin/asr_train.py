@@ -65,7 +65,7 @@ def get_parser(parser=None, required=True):
     )
     parser.add_argument(
         "--backend",
-        default="chainer",
+        default="pytorch",
         type=str,
         choices=["chainer", "pytorch"],
         help="Backend library",
